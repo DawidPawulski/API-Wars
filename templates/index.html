@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <h1>Star Wars Universe Planets</h1>
+    <button type="button" class="btn btn-primary" disabled id="btn-previous">Previous</button>
+    <button type="button" class="btn btn-primary" id="btn-next">Next</button>
+    <br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Diameter</th>
+            <th scope="col">Climate</th>
+            <th scope="col">Terrain</th>
+            <th scope="col">Surface Water Percentage</th>
+            <th scope="col">Population</th>
+            <th scope="col">Residents</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody id="planets">
+        </tbody>
+    </table>
+
+{% endblock %}

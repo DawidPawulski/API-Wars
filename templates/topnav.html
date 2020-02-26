@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{ url_for('show_planets') }}">Planet list</a>
+            <a data-toggle="modal" href="#myModal" class="nav-item nav-link">Voting statistics</a>
+            <a class="nav-item nav-link" href="#" id="registration">Registration</a>
+            {% if 'username' not in session %}
+                <a class="nav-item nav-link" href="#" id="login">Login</a>
+            {% endif %}
+            {% if session['username'] %}
+                <a class="nav-item nav-link" href="{{ url_for('logout_user') }}" id="logout">Logout</a>
+            {% endif %}
+        </div>
+    </div>
+    {% if session['username'] %}
+        <span id="signed">Signed in as {{ session['username'] }}</span>
+    {% endif %}
+</nav>
+<div>
+    {% if username_taken == True %}
+        <span id="registration-error">
+            Sorry, username already taken
+        </span>
+    {% endif %}
+    {% if incorrect_login == True %}
+        <span id="login-error">
+            Sorry, incorrect username or password
+        </span>
+    {% endif %}
+
+</div>

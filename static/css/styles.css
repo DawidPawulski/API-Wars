@@ -1,0 +1,26 @@
+.main-content {
+    margin: 3%;
+}
+
+#registration-modal, #login-modal, #modalStats {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px lightgray solid;
+    background: lightgray;
+    color: darkgray;
+    text-align: center;
+    padding: 5px;
+    font-size: large;
+}
+
+#registration-error, #login-error {
+    background-color: red;
+}
+
+#stats-title {
+    color: black;
+    text-align: center;
+}

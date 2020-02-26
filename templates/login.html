@@ -1,0 +1,11 @@
+<div id="login-modal" data-username="{{ session['username'] }}">
+    <h5>Login</h5>
+    <form action="{{ url_for('login_user') }}" method="post">
+        <label for="login-username">Username:</label><br>
+        <input id="login-username" name="login-username" type="text"><br>
+        <label for="login-password">Password:</label><br>
+        <input id="login-password" name="login-password" type="password"><br><br>
+        <button type="button" class="btn btn-secondary" id="login-close">Close</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>

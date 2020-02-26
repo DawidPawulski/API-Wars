@@ -1,0 +1,11 @@
+<div id="registration-modal">
+    <h5>Register new user</h5>
+    <form action="{{ url_for('register_user') }}" method="post">
+        <label for="register-username">Username:</label><br>
+        <input id="register-username" name="register-username" type="text"><br>
+        <label for="register-password">Password:</label><br>
+        <input id="register-password" name="register-password" type="password" minlength="4"><br><br>
+        <button type="button" class="btn btn-secondary" id="register-close">Close</button>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
