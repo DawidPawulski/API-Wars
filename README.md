@@ -24,7 +24,11 @@ Project was created using Virtual Environment. There are several packages used t
 
 ## Specification
 Python
+
 Flask
+
 Javascript
+
 WebAPI
+
 PostgreSQL
